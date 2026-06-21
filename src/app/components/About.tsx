@@ -8,12 +8,72 @@ export function About() {
   const { ref, isInView } = useInView();
 
   const skills = [
-    { name: 'React', level: 95, color: '#61DAFB' },
-    { name: 'TypeScript', level: 90, color: '#3178C6' },
-    { name: 'Next.js', level: 88, color: '#000000' },
-    { name: 'Tailwind', level: 92, color: '#06B6D4' },
-    { name: 'Node.js', level: 85, color: '#339933' },
-    { name: 'UI/UX', level: 87, color: '#00ff88' },
+  { name: 'React' },
+  { name: 'React 19' },
+  { name: 'Next.js' },
+  { name: 'Next.js 15' },
+  { name: 'App Router' },
+  { name: 'TypeScript' },
+  { name: 'JavaScript' },
+  { name: 'ES6+' },
+  { name: 'TanStack Query' },
+  { name: 'React Query' },
+  { name: 'Zustand' },
+  { name: 'Redux Toolkit' },
+  { name: 'RTK Query' },
+  { name: 'MobX' },
+  { name: 'React Hook Form' },
+  { name: 'Zod' },
+  { name: 'TailwindCSS' },
+  { name: 'shadcn/ui' },
+  { name: 'SCSS' },
+  { name: 'CSS Modules' },
+  { name: 'Styled Components' },
+  { name: 'PostCSS' },
+  { name: 'Webpack' },
+  { name: 'Vite' },
+  { name: 'ESBuild' },
+  { name: 'Turbopack' },
+  { name: 'Vitest' },
+  { name: 'Jest' },
+  { name: 'React Testing Library' },
+  { name: 'Playwright' },
+  { name: 'Storybook' },
+  { name: 'REST API' },
+  { name: 'GraphQL' },
+  { name: 'Axios' },
+  { name: 'Fetch API' },
+  { name: 'WebSockets' },
+  { name: 'SSE' },
+  { name: 'Docker' },
+  { name: 'Docker Compose' },
+  { name: 'Git' },
+  { name: 'GitHub' },
+  { name: 'GitLab CI' },
+  { name: 'CI/CD' },
+  { name: 'GitHub Actions' },
+  { name: 'Nginx' },
+  { name: 'Figma' },
+  { name: 'JIRA' },
+  { name: 'Agile' },
+  { name: 'Scrum' },
+  { name: 'Kanban' },
+  { name: 'Performance Optimization' },
+  { name: 'Lazy Loading' },
+  { name: 'Dynamic Imports' },
+  { name: 'SSR' },
+  { name: 'SSG' },
+  { name: 'ISR' },
+  { name: 'React Server Components' },
+  { name: 'Streaming' },
+  { name: 'Accessibility (a11y)' },
+  { name: 'i18n' },
+  { name: 'Node.js' },
+  { name: 'Prisma' },
+  { name: 'Redis' },
+  { name: 'MySQL' },
+  { name: 'SaaS' },
+  { name: 'AI' },
   ];
 
   return (
@@ -149,7 +209,8 @@ export function About() {
               <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-[var(--neon-green)]/10 to-transparent" />
 
               <div className="relative z-10 space-y-6">
-                <h4 className="text-2xl font-bold mb-8">Technical Skills</h4>
+                <h4 className="text-2xl font-bold mb-8">Skills</h4>
+                <div className='flex gap-3 flex-wrap'>
 
                 {skills.map((skill, index) => (
                   <motion.div
@@ -159,38 +220,12 @@ export function About() {
                     transition={{ delay: 0.6 + index * 0.1, duration: 0.6 }}
                     className="space-y-3"
                   >
-                    <div className="flex items-center justify-between">
-                      <span className="font-bold">{skill.name}</span>
-                      <span className="text-sm text-muted-foreground">{skill.level}%</span>
-                    </div>
-
-                    <div className="relative h-3 bg-muted overflow-hidden">
-                      <motion.div
-                        initial={{ width: 0 }}
-                        animate={isInView ? { width: `${skill.level}%` } : {}}
-                        transition={{ delay: 0.8 + index * 0.1, duration: 1, ease: 'easeOut' }}
-                        className="absolute inset-y-0 left-0"
-                        style={{
-                          background: `linear-gradient(90deg, ${skill.color}, ${skill.color}80)`,
-                        }}
-                      />
-
-                      {/* Блики на прогресс-баре */}
-                      <motion.div
-                        animate={{
-                          x: ['-100%', '200%'],
-                        }}
-                        transition={{
-                          duration: 2,
-                          repeat: Infinity,
-                          delay: index * 0.2,
-                          repeatDelay: 3
-                        }}
-                        className="absolute inset-y-0 w-1/3 bg-gradient-to-r from-transparent via-white/20 to-transparent"
-                      />
+                    <div className="">
+                      <span className="font-bold">{skill.name},</span>
                     </div>
                   </motion.div>
                 ))}
+                </div>
               </div>
 
               {/* Декоративные углы */}
