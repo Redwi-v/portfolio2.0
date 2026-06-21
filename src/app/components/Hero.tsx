@@ -183,7 +183,7 @@ export function Hero() {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="../../../assets/AndreyKaysinDev.pdf"
+                href="/AndreyKaysinDev.pdf"
                 download={true}
                 className="group relative px-8 py-4 rounded-none border-2 border-[var(--neon-green)] text-[var(--neon-green)] font-bold overflow-hidden"
               >
@@ -252,7 +252,7 @@ export function Hero() {
                   }}
                 >
                   <div className="w-52 h-52 rounded-full bg-gradient-to-br from-[var(--neon-green)]/30 to-transparent flex items-center justify-center text-7xl overflow-hidden">
-                    <img src="../../../assets/avatar.jpg" />
+                    <img src="/avatar.jpg" />
                   </div>
                 </div>
               </motion.div>
