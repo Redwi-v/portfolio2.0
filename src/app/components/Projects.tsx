@@ -11,28 +11,77 @@ export function Projects() {
 
   const projects = [
     {
-      title: "Pogovorim.online - Psychologists services",
-      category: "Web Development",
-      tech: ["NextJs", "Node.js", "MongoDB"],
-      image: "👩‍💼",
+      title: "Поговорим.online - платформа для онлайн-консультаций с психологами",
+      category: (
+        <div>
+          <span>Задачи:</span> <br />
+          ✅ Разработал клиентскую часть платформы для онлайн-консультаций с психологами; <br />
+          ✅ Реализовал многоролевой интерфейс (клиент, психолог, администратор) с разными ЛК; <br />
+          ✅ Внедрил сценарии: поиск специалистов, запись, оплата, видеозвонок, отзывы; <br />
+          ✅ Интегрировал REST API, обеспечил адаптивность и производительность. <br />
+        </div>
+      ),
+      tech: ["NextJs", "Redux", "SCSS", "Webpack", "WebSockets", "TypeScript", "team-based development"],
+      image: "/works/pogovorim.png",
       gradient: "from-blue-500/20 to-purple-500/20",
-      github: "https://pogovorim.online",
       link: "https://pogovorim.online",
     },
-        {
-      title: "Invesrerium quests - Cryptocurrency",
-      category: "Web Development",
-      tech: ["NextJs", "Node.js", "Cryptocurrency", ],
-      image: "💵",
+    {
+      title: "«Кронфорт» — жилой комплекс в Кронштадте",
+      category: (
+        <div>
+          Задачи: <br />
+          ✅ Разработал лендинг-сайт для жилого комплекса «Кронфорт» в Кронштадте; <br />
+          ✅ Реализовал карточки квартир с фильтрацией по количеству комнат, площади и этажу; <br />
+          ✅ Создал ипотечный калькулятор с расчётом платежей по разным банкам; <br />
+          ✅ Интегрировал карту локации с отображением инфраструктуры: парк «Остров фортов», набережная, детский сад,
+          лицей. <br />
+        </div>
+      ),
+      tech: ["NextJs", "Redux", "SCSS", "Webpack", "TypeScript", "REST API", "team-based development"],
+      image: "/works/kronfort.png",
+      gradient: "from-blue-500/20 to-purple-500/20",
+      link: "https://kronfort.ru/",
+    },
+    {
+      title: "«Котофей» — интернет-магазин детской одежды",
+      category: (
+        <div>
+          Задачи: <br />
+          ✅ Разработал клиентскую часть интернет-магазина для бренда детской одежды; <br />
+          ✅ Создал каталог товаров с фильтрацией по возрасту, сезону, размеру и типу обуви; <br />
+          ✅ Реализовал корзину, личный кабинет, и интеграцию с платежными системами; <br />
+          ✅ Настроил адаптивную вёрстку для удобного просмотра на всех устройствах. <br />
+        </div>
+      ),
+      tech: ["NextJs", "Redux", "TypeScript", "SCSS", "Webpack", "REST API"],
+      image: "/works/kotofey.png",
+      gradient: "from-blue-500/20 to-purple-500/20",
+      link: "https://kotofey.ru/",
+    },
+    {
+      title: "«Invesrerium Quests» — платформа для инвестиционных квестов",
+      category: (
+        <div>
+          Задачи: <br />
+          ✅ Разработал платформу для прохождения инвестиционных квестов с использованием Next.js; <br />
+          ✅ Реализовал систему прохождения квестов с отслеживанием прогресса пользователя; <br />
+          ✅ Создал таблицу лидеров для визуализации результатов всех участников; <br />
+          ✅ Настроил маршрутизацию (App Router), управление состоянием. <br />
+        </div>
+      ),
+      tech: ["NextJs", "Cryptocurrency", "Telegram Wallet api"],
+      image: "/works/numos.png",
       gradient: "from-blue-500/20 to-purple-500/20",
       github: "https://github.com/Redwi-v/invesrerium_quests",
       link: "https://invesrerium-quests.vercel.app/",
     },
-            {
-      title: "Pet project",
-      category: "Web Development",
-      tech: ["React", "Node.js", "MongoDB"],
-      image: "🍕",
+
+    {
+      title: "PIZZA - меню для заказа пиццы",
+      category: "Просто люблю пиццу )",
+      tech: ["React", "REST API", "Redux"],
+      image: "/works/pizza.png",
       gradient: "from-blue-500/20 to-purple-500/20",
       github: "https://github.com/Redwi-v/pizza",
       link: "https://pizza-5477d.web.app",
@@ -40,11 +89,7 @@ export function Projects() {
   ];
 
   return (
-    <section
-      id="projects"
-      ref={ref}
-      className="py-32 px-4 sm:px-6 lg:px-8 bg-card/30 relative overflow-hidden"
-    >
+    <section id="projects" ref={ref} className="py-32 px-4 sm:px-6 lg:px-8 bg-card/30 relative overflow-hidden">
       {/* Фоновый эффект */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
@@ -73,13 +118,9 @@ export function Projects() {
                 transition={{ delay: 0.3, duration: 0.8 }}
                 className="h-1 bg-[var(--neon-green)] mb-6"
               />
-              <h2 className="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-wider">
-                {t.projects.title}
-              </h2>
+              <h2 className="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-wider">{t.projects.title}</h2>
             </div>
-            <p className="text-xl text-muted-foreground lg:pb-2">
-              {t.projects.showcaseView}
-            </p>
+            <p className="text-xl text-muted-foreground lg:pb-2">{t.projects.showcaseView}</p>
           </div>
         </motion.div>
 
@@ -98,7 +139,7 @@ export function Projects() {
               <div className="relative h-full bg-card border-2 border-border overflow-hidden">
                 {/* Изображение проекта */}
                 <div
-                  className={`relative aspect-[4/3] bg-gradient-to-br ${project.gradient} flex items-center justify-center overflow-hidden`}
+                  className={`relative aspect-[2.5/3] bg-gradient-to-br ${project.gradient} flex items-center justify-center overflow-hidden`}
                 >
                   <motion.div
                     animate={{
@@ -108,7 +149,7 @@ export function Projects() {
                     transition={{ duration: 0.3 }}
                     className="text-8xl"
                   >
-                    {project.image}
+                    <img className="object-bottom" src={`${project.image}`} />
                   </motion.div>
 
                   {/* Overlay при наведении */}
@@ -127,16 +168,18 @@ export function Projects() {
                     >
                       <ExternalLink size={24} />
                     </motion.button>
-                    <motion.button
-                      whileHover={{ scale: 1.1 }}
-                      whileTap={{ scale: 0.9 }}
-                      className="w-14 h-14 rounded-full border-2 border-[var(--neon-green)] flex items-center justify-center text-[var(--neon-green)]"
-                      onClick={() => {
-                        window.location.href = project.github;
-                      }}
-                    >
-                      <Github size={24} />
-                    </motion.button>
+                    {project.github && (
+                      <motion.button
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
+                        className="w-14 h-14 rounded-full border-2 border-[var(--neon-green)] flex items-center justify-center text-[var(--neon-green)]"
+                        onClick={() => {
+                          window.location.href = project.github;
+                        }}
+                      >
+                        <Github size={24} />
+                      </motion.button>
+                    )}
                   </motion.div>
 
                   {/* Неоновая линия сверху */}
@@ -151,11 +194,9 @@ export function Projects() {
                 <div className="p-6 space-y-4">
                   <div>
                     <h3 className="text-xl font-bold mb-2 group-hover:text-[var(--neon-green)] transition-colors">
-                      {project.title}
+                      <a href={project.link}>{project.title}</a>
                     </h3>
-                    <p className="text-sm text-muted-foreground">
-                      {project.category}
-                    </p>
+                    <p className="text-sm text-muted-foreground">{project.category}</p>
                   </div>
 
                   {/* Технологии */}
