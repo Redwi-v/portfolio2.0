@@ -14,7 +14,7 @@ export const translations = {
       titleHighlight: 'FRONT-END',
       subtitle: 'DEVELOPER',
       description:
-        'I am a Frontend Developer with 3.5 years of commercial experience. I specialize in creating outstanding, user-friendly interfaces using React 19, Next.js 15 (App Router), TypeScript, and modern state management solutions. I constantly learn new technologies and apply them in production projects.',
+        'I am a Frontend Developer with 4.5 years of commercial experience. I specialize in creating outstanding, user-friendly interfaces using React 19, Next.js 15 (App Router), TypeScript, and modern state management solutions. I constantly learn new technologies and apply them in production projects.',
       hireMeButton: 'Hire Me',
       downloadCV: 'Download CV',
       profileAlt: 'Andrey Kay - Front-End Developer',
@@ -101,7 +101,7 @@ export const translations = {
       titleHighlight: 'FRONT-END',
       subtitle: 'DEVELOPER',
       description:
-        'Я Frontend-разработчик с 3.5 годами коммерческого опыта. Специализируюсь на создании удобных пользовательских интерфейсов с использованием React 19, Next.js 15 (App Router), TypeScript и современных решений для управления состоянием. Постоянно изучаю новые технологии и применяю их в продакшене.',
+        'Я Frontend-разработчик с 4.5 годами коммерческого опыта. Специализируюсь на создании удобных пользовательских интерфейсов с использованием React 19, Next.js 15 (App Router), TypeScript и современных решений для управления состоянием. Постоянно изучаю новые технологии и применяю их в продакшене.',
       hireMeButton: 'Нанять меня',
       downloadCV: 'Скачать резюме',
       profileAlt: 'Андрей Кайсин - Фронтенд-разработчик',
