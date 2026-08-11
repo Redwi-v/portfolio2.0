@@ -251,8 +251,8 @@ export function Hero() {
                       "polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%)",
                   }}
                 >
-                  <div className="w-52 h-52 rounded-full bg-gradient-to-br from-[var(--neon-green)]/30 to-transparent flex items-center justify-center text-7xl overflow-hidden">
-                    <img src="/avatar.jpg" />
+                  <div className=" w-52 h-52 rounded-full bg-gradient-to-br from-[var(--neon-green)]/30 to-transparent flex items-center justify-center text-7xl overflow-hidden">
+                    <img className="w-full h-full object-cover" src="/avatar.jpg" />
                   </div>
                 </div>
               </motion.div>
