@@ -12,11 +12,13 @@ import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { ScrollToTop } from './components/ScrollToTop';
 import { PageLoader } from './components/PageLoader';
+import { GoogleAnalytics } from './components/GoogleAnalytics';
 
 export default function App() {
   return (
     <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
       <LanguageProvider>
+        <GoogleAnalytics />
         <PageLoader />
         <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
           <Header />
