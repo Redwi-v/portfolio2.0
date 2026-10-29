@@ -14,7 +14,7 @@ export const translations = {
       titleHighlight: 'FULLSTACK',
       subtitle: 'DEVELOPER',
       description:
-        'I am a Fullstack Developer with 4.5 years of commercial experience. I specialize in creating outstanding, user-friendly interfaces using React 19, Next.js 15 (App Router), TypeScript, and modern state management solutions. I constantly learn new technologies and apply them in production projects.',
+        'Senior fullstack developer with 6+ years of commercial experience. I build websites, e-commerce stores, and SaaS applications with React, Next.js, TypeScript, Node.js, and NestJS — from frontend and API design to deployment and optimization.',
       hireMeButton: 'Hire Me',
       downloadCV: 'Download CV',
       profileAlt: 'Andrey Kay - Fullstack Developer',
@@ -22,21 +22,21 @@ export const translations = {
     about: {
       title: 'ABOUT ME',
       heading: 'WHAT I DO',
-      description: 'I build modern, responsive web applications with cutting-edge technologies. My expertise includes React, Next.js, TypeScript, and performance optimization.',
+      description: 'I am a senior fullstack developer with 6+ years of commercial experience building websites and web applications. I work across frontend and backend: React, Next.js, and TypeScript for interfaces; Node.js, NestJS, PostgreSQL, and Redis for APIs and data. My work includes e-commerce, SaaS, and education platforms, performance optimization, testing, and deployment.',
     },
     services: {
       title: 'What I Do',
       webDev: {
         title: 'Web Development',
-        description: 'Building responsive and performant web applications with React & Next.js',
+        description: 'Website development, e-commerce, and SaaS applications with React, Next.js, and TypeScript — from responsive frontend to production-ready releases.',
       },
       uiDesign: {
         title: 'UI/UX Development',
-        description: 'Creating pixel-perfect interfaces from Figma designs using TailwindCSS and shadcn/ui',
+        description: 'Accessible, responsive frontend development from Figma designs, integrated with REST APIs and backend services.',
       },
       optimization: {
         title: 'Performance & Quality',
-        description: 'Optimizing applications with lazy loading, dynamic imports, and comprehensive testing (Vitest + RTL)',
+        description: 'Backend and API development with Node.js and NestJS, PostgreSQL and Redis optimization, automated testing, and CI/CD.',
       },
     },
     projects: {
@@ -81,7 +81,18 @@ export const translations = {
       experience: 'Years of Experience',
       projects: 'Projects Completed',
     },
+    highlights: {
+      title: 'SELECTED ENGINEERING RESULTS',
+      items: [
+        { value: '4.2 → 1.7 s', label: 'E-commerce LCP after SSR and performance optimization' },
+        { value: '+12.4%', label: 'E-commerce conversion change measured in a three-week A/B test' },
+        { value: '183 ms', label: 'NestJS API p95 response time after PostgreSQL and Redis optimization' },
+        { value: '35,000+', label: 'Learners supported by an education platform built with React, Next.js, and NestJS' },
+        { value: '11% → 79%', label: 'Automated test coverage improvement' },
+      ],
+    },
     footer: {
+      description: 'Senior full stack developer building websites, e-commerce, and web applications with React, Next.js, Node.js, NestJS, and TypeScript.',
       copyright: '© 2026 Andrey Kay. All rights reserved.',
       builtWith: 'Built with React & Tailwind CSS',
     },
@@ -97,11 +108,11 @@ export const translations = {
     },
     hero: {
       greeting: 'Привет 👋',
-       title: 'SENIOR',
+      title: 'SENIOR',
       titleHighlight: 'FULLSTACK',
       subtitle: 'DEVELOPER',
       description:
-        'Я Fullstack-разработчик с 4.5 годами коммерческого опыта. Специализируюсь на создании удобных пользовательских интерфейсов с использованием React 19, Next.js 15 (App Router), TypeScript и современных решений для управления состоянием. Постоянно изучаю новые технологии и применяю их в продакшене.',
+        'Senior fullstack-разработчик с опытом коммерческой разработки более 6 лет. Создаю сайты, интернет-магазины и SaaS-приложения на React, Next.js, TypeScript, Node.js и NestJS — от интерфейса и API до запуска и оптимизации.',
       hireMeButton: 'Нанять меня',
       downloadCV: 'Скачать резюме',
       profileAlt: 'Андрей Кайсин - Фронтенд-разработчик',
@@ -109,21 +120,21 @@ export const translations = {
     about: {
       title: 'ОБО МНЕ',
       heading: 'ЧЕМ Я ЗАНИМАЮСЬ',
-      description: 'Я создаю современные адаптивные веб-приложения с использованием передовых технологий. Моя экспертиза включает React, Next.js, TypeScript и оптимизацию производительности.',
+      description: 'Я senior fullstack-разработчик и frontend-разработчик с опытом коммерческой разработки более 6 лет. Создаю сайты и веб-приложения для e-commerce, SaaS и образования. Работаю с frontend на React, Next.js и TypeScript, а также с backend и API на Node.js, NestJS, PostgreSQL и Redis. Оптимизирую производительность, тестирование и выпуск продуктов.',
     },
     services: {
       title: 'Чем я занимаюсь',
       webDev: {
         title: 'Веб-разработка',
-        description: 'Создание адаптивных и производительных веб-приложений на React и Next.js',
+        description: 'Создание сайтов, интернет-магазинов и веб-приложений на React, Next.js и TypeScript — от адаптивного интерфейса до запуска проекта.',
       },
       uiDesign: {
         title: 'UI/UX разработка',
-        description: 'Верстка pixel-perfect интерфейсов из макетов Figma с TailwindCSS и shadcn/ui',
+        description: 'Разработка адаптивного frontend по макетам Figma, интеграция интерфейсов с REST API и backend-сервисами.',
       },
       optimization: {
         title: 'Производительность и качество',
-        description: 'Оптимизация приложений с lazy loading, динамическими импортами и комплексным тестированием (Vitest + RTL)',
+        description: 'Backend-разработка на Node.js и NestJS, создание API, оптимизация PostgreSQL и Redis, автоматизированное тестирование и CI/CD.',
       },
     },
     projects: {
@@ -168,7 +179,18 @@ export const translations = {
       experience: 'Лет опыта',
       projects: 'Проектов завершено',
     },
+    highlights: {
+      title: 'РЕЗУЛЬТАТЫ РАЗРАБОТКИ',
+      items: [
+        { value: '4,2 → 1,7 с', label: 'Время LCP интернет-магазина после внедрения SSR и оптимизации производительности' },
+        { value: '+12,4%', label: 'Изменение конверсии интернет-магазина по итогам трёхнедельного A/B-теста' },
+        { value: '183 мс', label: 'Отклик API p95 после оптимизации PostgreSQL и Redis в приложении на NestJS' },
+        { value: '35 000+', label: 'Учащихся образовательной платформы на React, Next.js и NestJS' },
+        { value: '11% → 79%', label: 'Рост покрытия кода автоматизированными тестами' },
+      ],
+    },
     footer: {
+      description: 'Senior fullstack-разработчик: разработка сайтов, интернет-магазинов и веб-приложений на React, Next.js, Node.js, NestJS и TypeScript.',
       copyright: '© 2026 Андрей Кайсин. Все права защищены.',
       builtWith: 'Создано с помощью React и Tailwind CSS',
     },

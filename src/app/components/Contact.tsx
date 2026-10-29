@@ -4,7 +4,7 @@ import { useLanguage } from '../contexts/LanguageContext';
 import { useInView } from '../hooks/useInView';
 
 export function Contact() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const { ref, isInView } = useInView();
 
   return (
@@ -65,8 +65,8 @@ export function Contact() {
             <div className="space-y-4">
               {[
                 { icon: Mail, label: t.contact.email, value: 'andrey.kaysin.dev@gmail.com', color: '#00ff88' },
-                { icon: Phone, label: t.contact.phone, value: '+7 (991) 077-49-34', color: '#3B82F6' },
-                { icon: MapPin, label: t.contact.location, value: 'Russia', color: '#A855F7' },
+                { icon: Phone, label: t.contact.phone, value: '+7 (921) 299-42-00', color: '#3B82F6' },
+                { icon: MapPin, label: t.contact.location, value: language === 'ru' ? 'Санкт-Петербург · удалённо по России' : 'Saint Petersburg · remote across Russia', color: '#A855F7' },
               ].map((item, index) => (
                 <motion.div
                   key={index}

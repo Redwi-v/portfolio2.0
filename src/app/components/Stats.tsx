@@ -2,23 +2,21 @@ import { motion } from 'motion/react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { useInView } from '../hooks/useInView';
 import { useEffect, useState } from 'react';
-import { Award, Briefcase, Coffee, Users } from 'lucide-react';
+import { Award, Briefcase } from 'lucide-react';
 
 export function Stats() {
   const { t } = useLanguage();
   const { ref, isInView } = useInView();
   const [experience, setExperience] = useState(0);
   const [projectsCount, setProjectsCount] = useState(0);
-  const [clients, setClients] = useState(0);
-  const [coffee, setCoffee] = useState(0);
 
   useEffect(() => {
     if (isInView) {
       const experienceInterval = setInterval(() => {
         setExperience((prev) => {
-          if (prev >= 3.5) {
+          if (prev >= 6) {
             clearInterval(experienceInterval);
-            return 3.5;
+            return 6;
           }
           return prev + 1;
         });
@@ -26,39 +24,17 @@ export function Stats() {
 
       const projectsInterval = setInterval(() => {
         setProjectsCount((prev) => {
-          if (prev >= 25) {
+          if (prev >= 40) {
             clearInterval(projectsInterval);
-            return 25;
+            return 40;
           }
           return prev + 1;
         });
       }, 20);
 
-      const clientsInterval = setInterval(() => {
-        setClients((prev) => {
-          if (prev >= 25) {
-            clearInterval(clientsInterval);
-            return 25;
-          }
-          return prev + 1;
-        });
-      }, 30);
-
-      const coffeeInterval = setInterval(() => {
-        setCoffee((prev) => {
-          if (prev >= 9999) {
-            clearInterval(coffeeInterval);
-            return 9999;
-          }
-          return prev + 100;
-        });
-      }, 10);
-
       return () => {
         clearInterval(experienceInterval);
         clearInterval(projectsInterval);
-        clearInterval(clientsInterval);
-        clearInterval(coffeeInterval);
       };
     }
   }, [isInView]);
@@ -77,13 +53,6 @@ export function Stats() {
       suffix: '+',
       label: t.stats.projects,
       color: '#3B82F6',
-    },
-    {
-      icon: Coffee,
-      value: coffee,
-      suffix: '+',
-      label: 'Cups of Coffee',
-      color: '#F59E0B',
     },
   ];
 
@@ -110,7 +79,7 @@ export function Stats() {
       </div>
 
       <div className="max-w-7xl mx-auto relative z-10">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {stats.map((stat, index) => (
             <motion.div
               key={index}

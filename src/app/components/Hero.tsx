@@ -252,7 +252,7 @@ export function Hero() {
                   }}
                 >
                   <div className=" w-52 h-52 rounded-full bg-gradient-to-br from-[var(--neon-green)]/30 to-transparent flex items-center justify-center text-7xl overflow-hidden">
-                    <img className="w-full h-full object-cover" src="/avatar.jpg" />
+                    <img className="w-full h-full object-cover" src="/avatar.jpg" alt={t.hero.profileAlt} fetchPriority="high" />
                   </div>
                 </div>
               </motion.div>

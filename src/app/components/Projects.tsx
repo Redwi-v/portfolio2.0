@@ -193,7 +193,7 @@ export function Projects() {
                     transition={{ duration: 0.3 }}
                     className="text-8xl"
                   >
-                    <img className="object-bottom" src={`${project.image}`} />
+                    <img className="object-bottom" src={`${project.image}`} alt={`Сайт проекта: ${project.title}`} loading="lazy" />
                   </motion.div>
 
                   {/* Overlay при наведении */}

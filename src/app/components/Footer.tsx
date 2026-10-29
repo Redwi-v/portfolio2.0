@@ -44,9 +44,7 @@ export function Footer() {
               <div className="text-4xl font-bold mb-4 relative inline-block">
                 <span className="text-foreground">ANDR</span>
               </div>
-              <p className="text-muted-foreground mb-4">
-                Creating exceptional digital experiences with cutting-edge technologies.
-              </p>
+              <p className="text-muted-foreground mb-4">{t.footer.description}</p>
             </div>
 
             <div className="flex items-center gap-2 text-sm text-muted-foreground">

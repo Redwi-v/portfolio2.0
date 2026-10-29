@@ -6,9 +6,9 @@ import { About } from './components/About';
 import { Services } from './components/Services';
 import { Projects } from './components/Projects';
 import { Stats } from './components/Stats';
+import { CareerHighlights } from './components/CareerHighlights';
 import { Blog } from './components/Blog';
 import { Contact } from './components/Contact';
-import { Testimonials } from './components/Testimonials';
 import { Footer } from './components/Footer';
 import { ScrollToTop } from './components/ScrollToTop';
 import { PageLoader } from './components/PageLoader';
@@ -25,9 +25,9 @@ export default function App() {
             <About />
             <Services />
             <Stats />
+            <CareerHighlights />
             <Projects />
             {/* <Blog /> */}
-            <Testimonials />
             <Contact />
           </main>
           <Footer />
