@@ -17,11 +17,11 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     const metadata = {
       ru: {
-        title: 'Андрей Кайсин — веб-разработчик, React, Next.js, Node.js и NestJS',
+        title: 'Андрей Кайсин — веб-разработчик React, Next.js, Node.js',
         description: 'Андрей Кайсин — senior fullstack-разработчик в Санкт-Петербурге. Разработка сайтов и веб-приложений на React, Next.js, Node.js, NestJS и TypeScript. Удалённая работа по России.',
       },
       en: {
-        title: 'Andrey Kaysin — Full Stack Developer, React, Next.js, Node.js & NestJS',
+        title: 'Andrey Kaysin — Full Stack Developer, React, Next.js, Node.js',
         description: 'Andrey Kaysin is a senior full stack developer in Saint Petersburg with 6+ years of experience. Website development with React, Next.js, Node.js, NestJS, and TypeScript. Available remotely across Russia.',
       },
     }[language];
